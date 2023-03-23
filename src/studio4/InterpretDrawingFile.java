@@ -19,6 +19,9 @@ public class InterpretDrawingFile {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-		
+		while(in.hasNextLine()) {
+			System.out.println(in.nextLine());
+			System.out.println(in.nextDouble());
+		}
 	}
 }
